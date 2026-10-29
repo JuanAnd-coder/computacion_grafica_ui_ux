@@ -1,0 +1,315 @@
+/* ===== ESTILOS GENERALES ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #222222;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* ===== LOGIN (usa Flexbox) ===== */
+.login-body {
+  display: flex;           
+  min-height: 100vh;        
+}
+
+/* Panel izquierdo con el nombre de la app */
+.login-marca {
+  flex: 1;
+  background-color: #12312b;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;   
+  justify-content: space-between;
+}
+
+.login-marca .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.login-marca h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+/* Panel derecho con el formulario */
+.login-formulario {
+  flex: 1;
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  padding: 20px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 380px;
+}
+
+.login-card h2 {
+  margin-bottom: 10px;
+}
+
+.login-card .sub {
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.campo {
+  margin-bottom: 15px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.campo input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+  font-size: 16px;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #12312b;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #1d4a41;
+}
+
+
+/* ===== DASHBOARD ===== */
+/* Grid de 2 columnas: sidebar a la izquierda, contenido a la derecha */
+.app {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  min-height: 100vh;
+}
+
+/* ----- Sidebar ----- */
+.sidebar {
+  background-color: #12312b;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar .logo {
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 12px;
+  color: #cccccc;
+}
+
+.menu a:hover {
+  background-color: #1d4a41;
+  color: white;
+}
+
+/* Opción seleccionada: rectángulo negro */
+.menu a.activo {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.sidebar .salir {
+  display: block;
+  margin-top: 30px;
+  padding: 12px;
+  color: #999999;
+}
+
+/* ----- Contenido principal ----- */
+main {
+  padding: 30px;
+}
+
+.encabezado {
+  margin-bottom: 25px;
+}
+
+.encabezado h1 {
+  font-size: 28px;
+}
+
+.encabezado p {
+  color: #666666;
+}
+
+/* Tarjetas con Grid: 3 columnas iguales */
+.tarjetas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.tarjeta {
+  background-color: #1d4a41;
+  border-radius: 5px;
+  color: white;
+  padding: 20px;
+}
+
+.tarjeta h3 {
+  font-size: 15px;
+  font-weight: normal;
+  color: #bbbbbb;
+}
+
+.tarjeta .valor {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.tarjeta .nota {
+  font-size: 13px;
+  color: #bbbbbb;
+}
+
+
+/* ----- Tablas ----- */
+.panel {
+  background-color: white;
+  padding: 20px;
+}
+
+.panel h2 {
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #dddddd;
+}
+
+th.monto, td.monto {
+  text-align: right;
+}
+
+.monto.mas {
+  color: green;
+}
+
+.monto.menos {
+  color: red;
+}
+
+
+/* ----- Gráfico de barras (Reportes) ----- */
+.barras {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+  height: 220px;
+}
+
+.barra-grupo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.barra-par {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+
+.barra {
+  width: 40%;
+}
+
+.barra.i {
+  background-color: green;
+}
+
+.barra.g {
+  background-color: red;
+}
+
+.leyenda {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.leyenda span {
+  margin-right: 20px;
+}
+
+.leyenda i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+.btn-back {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  border: none;
+  background-color: #12312b;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ===== PANTALLAS PEQUEÑAS (celular) ===== */
+@media (max-width: 800px) {
+  .login-body {
+    flex-direction: column;
+  }
+
+  .app {
+    grid-template-columns: 1fr;
+  }
+
+  .tarjetas {
+    grid-template-columns: 1fr;
+  }
+}

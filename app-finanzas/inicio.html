@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inicio · GestorPlus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <a class="logo" href="inicio.html">GestorPlus &#129297</a>
+      <nav aria-label="Menú principal">
+        <ul class="menu">
+          <li><a href="inicio.html"   class="activo" aria-current="page">Inicio</a></li>
+          <li><a href="ingresos.html" >Ingresos</a></li>
+          <li><a href="gastos.html"   >Gastos</a></li>
+          <li><a href="reportes.html" >Reportes</a></li>
+        </ul>
+      </nav>
+      <a class="salir" href="index.html">Cerrar sesión</a>
+    </aside>
+    <main>
+      <header class="encabezado">
+        <h1>Hola, bienvenido Juan</h1>
+        <p>Así van tus finanzas en octubre.</p>
+      </header>
+
+      <section class="tarjetas" aria-label="Resumen">
+        <div class="tarjeta saldo">
+          <h3>Saldo total</h3>
+          <p class="valor">$ 8.450.000</p>
+          <p class="nota">Todas tus cuentas</p>
+        </div>
+        <div class="tarjeta gasto">
+          <h3>Gastos del mes</h3>
+          <p class="valor">$ 2.180.000</p>
+        </div>
+        <div class="tarjeta ingreso">
+          <h3>Ingresos del mes</h3>
+          <p class="valor">$ 4.600.000</p>
+        
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Últimos movimientos</h2>
+        <table>
+          <thead><tr><th>Fecha</th><th>Descripción</th><th>Categoría</th><th class="monto">Monto</th></tr></thead>
+          <tbody>
+            <tr><td>09 oct</td><td>Pago de nómina</td><td>Salario</td><td class="monto mas">+ $ 3.800.000</td></tr>
+            <tr><td>08 oct</td><td>Supermercado</td><td>Alimentación</td><td class="monto menos">− $ 214.500</td></tr>
+            <tr><td>06 oct</td><td>Arriendo</td><td>Vivienda</td><td class="monto menos">− $ 1.200.000</td></tr>
+            <tr><td>03 oct</td><td>Bonos de Rendimiento</td><td>Extra</td><td class="monto mas">+ $ 800.000</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

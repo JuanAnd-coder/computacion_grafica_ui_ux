@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ingresos · GestorPlus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <a class="logo" href="inicio.html">GestorPlus &#129297</a>
+      <nav aria-label="Menú principal">
+        <ul class="menu">
+          <li><a href="inicio.html"   >Inicio</a></li>
+          <li><a href="ingresos.html" class="activo" aria-current="page">Ingresos</a></li>
+          <li><a href="gastos.html"   >Gastos</a></li>
+          <li><a href="reportes.html" >Reportes</a></li>
+        </ul>
+      </nav>
+      <a class="salir" href="index.html">Cerrar sesión</a>
+    </aside>
+    <main>
+      <header class="encabezado">
+        <h1>Ingresos</h1>
+        <p>Todo el dinero que entró este mes.</p>
+      </header>
+
+      <section class="tarjetas">
+        <div class="tarjeta ingreso"><h3>Total del mes</h3><p class="valor">$ 4.600.000</p></div>
+        <div class="tarjeta"><h3>Fuente principal</h3><p class="valor">Salario</p><p class="nota">83% del total</p></div>
+        <div class="tarjeta"><h3>Próximo pago</h3><p class="valor">30 oct</p><p class="nota">Nómina</p></div>
+      </section>
+
+      <section class="panel">
+        <h2>Detalle de ingresos</h2>
+        <table>
+          <thead><tr><th>Fecha</th><th>Fuente</th><th>Cuenta</th><th class="monto">Monto</th></tr></thead>
+          <tbody>
+            <tr><td>09 oct</td><td>Nómina</td><td>Cuenta de ahorros</td><td class="monto mas">+ $ 3.800.000</td></tr>
+            <tr><td>03 oct</td><td>Bonos de Rendimiento</td><td>Cuenta corriente</td><td class="monto mas">+ $ 800.000</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

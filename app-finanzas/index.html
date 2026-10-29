@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iniciar sesión · GestorPlus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-body">
+  <section class="login-marca">
+    <span class="logo">GestorPlus &#129297</span>
+    <div>
+      <h1>Tus cuentas, sin sorpresas.</h1>
+      <p>Registra lo que entra, lo que sale y visualiza tus reportes.</p>
+    </div>
+  </section>
+
+  <section class="login-formulario">
+    <form class="login-card" action="inicio.html" method="get">
+      <h2>Inicia sesión</h2>
+      <p class="sub">Ingresa con tu cuenta.</p>
+
+      <div class="campo">
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Ej: admin" required autocomplete="username">
+      </div>
+
+      <div class="campo">
+        <label for="clave">Contraseña</label>
+        <input type="password" id="clave" name="clave" placeholder="••••••••" required autocomplete="current-password">
+      </div>
+
+      <button type="submit" class="btn">Ingresar</button>
+    </form>
+            
+  </section>
+  <div style="text-align: center; margin-top: 20px;">
+                <a href="../index.html" class="btn-back"> &#129297 Volver al Inicio</a>
+            </div>
+</body>
+</html>

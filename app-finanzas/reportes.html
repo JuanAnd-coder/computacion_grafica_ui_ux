@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reportes · GestorPlus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <a class="logo" href="inicio.html">GestorPlus &#129297</a>
+      <nav aria-label="Menú principal">
+        <ul class="menu">
+          <li><a href="inicio.html"   >Inicio</a></li>
+          <li><a href="ingresos.html" >Ingresos</a></li>
+          <li><a href="gastos.html"   >Gastos</a></li>
+          <li><a href="reportes.html" class="activo" aria-current="page">Reportes</a></li>
+        </ul>
+      </nav>
+      <a class="salir" href="index.html">Cerrar sesión</a>
+    </aside>
+    <main>
+      <header class="encabezado">
+        <h1>Reportes</h1>
+        <p>Compara tus ingresos y gastos de los últimos 6 meses.</p>
+      </header>
+
+      <section class="tarjetas">
+        <div class="tarjeta ingreso"><h3>Ahorro del mes</h3><p class="valor">$ 2.420.000</p></div>
+        <div class="tarjeta"><h3>Tasa de ahorro</h3><p class="valor">53%</p><p class="nota">Ingresos menos gastos</p></div>
+        <div class="tarjeta"><h3>Mejor mes</h3><p class="valor">Agosto</p><p class="nota">Mayor ahorro del semestre</p></div>
+      </section>
+
+      <section class="panel">
+        <h2>Ingresos vs. gastos</h2>
+        <div class="barras" role="img" aria-label="Gráfico de barras de ingresos y gastos por mes">
+          <div class="barra-grupo"><div class="barra-par"><div class="barra i" style="height:70%"></div><div class="barra g" style="height:45%"></div></div><span>May</span></div>
+          <div class="barra-grupo"><div class="barra-par"><div class="barra i" style="height:72%"></div><div class="barra g" style="height:50%"></div></div><span>Jun</span></div>
+          <div class="barra-grupo"><div class="barra-par"><div class="barra i" style="height:68%"></div><div class="barra g" style="height:58%"></div></div><span>Jul</span></div>
+          <div class="barra-grupo"><div class="barra-par"><div class="barra i" style="height:90%"></div><div class="barra g" style="height:42%"></div></div><span>Ago</span></div>
+          <div class="barra-grupo"><div class="barra-par"><div class="barra i" style="height:75%"></div><div class="barra g" style="height:52%"></div></div><span>Sep</span></div>
+          <div class="barra-grupo"><div class="barra-par"><div class="barra i" style="height:80%"></div><div class="barra g" style="height:40%"></div></div><span>Oct</span></div>
+        </div>
+        <div class="leyenda">
+          <span><i style="background:var(--ingreso)"></i>Ingresos</span>
+          <span><i style="background:var(--gasto)"></i>Gastos</span>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

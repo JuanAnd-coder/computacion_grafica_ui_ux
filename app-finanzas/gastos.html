@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gastos · GestorPlus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <a class="logo" href="inicio.html">GestorPlus &#129297</a>
+      <nav aria-label="Menú principal">
+        <ul class="menu">
+          <li><a href="inicio.html"   >Inicio</a></li>
+          <li><a href="ingresos.html" >Ingresos</a></li>
+          <li><a href="gastos.html"   class="activo" aria-current="page">Gastos</a></li>
+          <li><a href="reportes.html" >Reportes</a></li>
+        </ul>
+      </nav>
+      <a class="salir" href="index.html">Cerrar sesión</a>
+    </aside>
+    <main>
+      <header class="encabezado">
+        <h1>Gastos</h1>
+        <p>En qué se fue tu dinero este mes.</p>
+      </header>
+
+      <section class="tarjetas">
+        <div class="tarjeta gasto"><h3>Total del mes</h3><p class="valor">$ 2.180.000</p></div>
+        <div class="tarjeta"><h3>Mayor categoría</h3><p class="valor">Vivienda</p><p class="nota">55% del total</p></div>
+        <div class="tarjeta"><h3>Promedio diario</h3><p class="valor">$ 218.000</p></div>
+        <div class="tarjeta"><h3>Movimientos</h3><p class="valor">23</p><p class="nota">En lo que va del mes</p></div>
+      </section>
+
+      <section class="panel">
+        <h2>Detalle de gastos</h2>
+        <table>
+          <thead><tr><th>Fecha</th><th>Descripción</th><th>Categoría</th><th class="monto">Monto</th></tr></thead>
+          <tbody>
+            <tr><td>08 oct</td><td>Supermercado</td><td>Alimentación</td><td class="monto menos">− $ 214.500</td></tr>
+            <tr><td>07 oct</td><td>Transporte</td><td>Movilidad</td><td class="monto menos">− $ 85.000</td></tr>
+            <tr><td>06 oct</td><td>Arriendo</td><td>Vivienda</td><td class="monto menos">− $ 1.200.000</td></tr>
+            <tr><td>04 oct</td><td>Servicios públicos</td><td>Vivienda</td><td class="monto menos">− $ 310.000</td></tr>
+            <tr><td>02 oct</td><td>Cine y cena</td><td>Ocio</td><td class="monto menos">− $ 120.500</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
